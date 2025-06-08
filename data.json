@@ -4,9 +4,7 @@
         "title": "Software Engineer",
         "tagline": "App Development | DevOps | Cloud",
         "description": "A passionate Software Engineer specializing in app development, DevOps, and cloud architecture. I build innovative solutions with cutting-edge technology.",
-        "email": "rudraksh@example.com",
-        "phone": "+1 (123) 456-7890",
-        "location": "San Francisco, CA, USA",
+        "email": "rudrakshkanungo2022@gmail.com",
         "about_title": "Software Engineer & Developer",
         "about_description": [
             "I'm a dedicated software engineer with expertise in building scalable applications and solving complex problems. With a strong foundation in both frontend and backend technologies, I create efficient, user-friendly solutions that drive business growth.",
@@ -20,8 +18,7 @@
                 "icon": "fas fa-mobile-alt",
                 "skills": [
                     {"icon": "fab fa-react", "name": "React Native"},
-                    {"icon": "fab fa-android", "name": "Android (Kotlin)"},
-                    {"icon": "fab fa-apple", "name": "iOS (Swift)"},
+                    {"icon": "fa-brands fa-flutter", "name": "Flutter"},
                     {"icon": "fab fa-js", "name": "JavaScript"}
                 ]
             },

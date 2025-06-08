@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudraksh Kanungo - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Rudraksh</a>
+            <div class="nav-links">
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="subtitle">Hello, I'm</span>
+                    <h1>Rudraksh <span>Kanungo</span></h1>
+                    <p>A passionate Software Engineer specializing in app development, DevOps, and cloud architecture. I build innovative solutions with cutting-edge technology.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-img-container">
+                        <div class="hero-img">
+                            <div class="hero-img-content">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>Software Engineer</h3>
+                                <p>App Development | DevOps | Cloud</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Rudraksh Kanungo" style="width:100%; height:auto;">
+                    </div>
+                </div>
+                
+                <div class="about-info">
+                    <h3>Software Engineer & Developer</h3>
+                    <p>I'm a dedicated software engineer with expertise in building scalable applications and solving complex problems. With a strong foundation in both frontend and backend technologies, I create efficient, user-friendly solutions that drive business growth.</p>
+                    <p>My approach combines technical excellence with creative problem-solving to deliver exceptional results. I'm constantly learning and adapting to new technologies to stay at the forefront of the industry.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>App Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Backend & DevOps</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud & Databases</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full-Stack Development</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">
+                    All Projects
+                </button>
+                <button class="filter-btn" data-filter="app">
+                    App Development
+                </button>
+                <button class="filter-btn" data-filter="devops">
+                    DevOps
+                </button>
+                <button class="filter-btn" data-filter="cloud">
+                    Cloud
+                </button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with product management, user authentication, and payment processing.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="devops">
+                    <div class="project-img">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>CI/CD Pipeline Automation</h3>
+                        <p>A comprehensive CI/CD pipeline for automating testing, building, and deployment of applications.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Docker</span>
+                            <span class="project-tag">Jenkins</span>
+                            <span class="project-tag">Kubernetes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="cloud">
+                    <div class="project-img">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cloud Infrastructure Automation</h3>
+                        <p>Infrastructure as Code solution for automating cloud resource provisioning and management.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Terraform</span>
+                            <span class="project-tag">AWS</span>
+                            <span class="project-tag">Ansible</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker App</h3>
+                        <p>A mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> App Development</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-name">
+                                <i class="fab fa-react"></i>
+                                <span>React Native</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fab fa-android"></i>
+                                <span>Android (Kotlin)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fab fa-apple"></i>
+                                <span>iOS (Swift)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend & DevOps</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-name">
+                                <i class="fab fa-node"></i>
+                                <span>Node.js</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fas fa-cubes"></i>
+                                <span>Kubernetes</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Databases</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-name">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fas fa-database"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <i class="fas fa-fire"></i>
+                                <span>Firebase</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Certifications</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="certifications-container">
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div>
+                            <h3 class="cert-title">AWS Certified Solutions Architect</h3>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                        </div>
+                    </div>
+                    <div class="cert-date">Dec 2022</div>
+                    <p>Designed and deployed scalable, highly available, and fault-tolerant systems on AWS.</p>
+                    <p class="cert-id"><strong>Credential ID:</strong> AWS-ASA-12345</p>
+                    <div class="cert-footer">
+                        <a href="#" class="btn btn-outline">View Credential</a>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div>
+                            <h3 class="cert-title">Google Cloud Professional DevOps Engineer</h3>
+                            <p class="cert-issuer">Google Cloud</p>
+                        </div>
+                    </div>
+                    <div class="cert-date">Mar 2023</div>
+                    <p>Building and managing CI/CD pipelines, implementing SRE practices, and managing Google Kubernetes Engine.</p>
+                    <p class="cert-id"><strong>Credential ID:</strong> GCP-DEVOPS-67890</p>
+                    <div class="cert-footer">
+                        <a href="#" class="btn btn-outline">View Credential</a>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="cert-title">Certified Kubernetes Administrator (CKA)</h3>
+                            <p class="cert-issuer">Cloud Native Computing Foundation</p>
+                        </div>
+                    </div>
+                    <div class="cert-date">Aug 2022</div>
+                    <p>Demonstrated skills in Kubernetes installation, configuration, and management of production-grade clusters.</p>
+                    <p class="cert-id"><strong>Credential ID:</strong> LF-98765</p>
+                    <div class="cert-footer">
+                        <a href="#" class="btn btn-outline">View Credential</a>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div>
+                            <h3 class="cert-title">Docker Certified Associate</h3>
+                            <p class="cert-issuer">Docker, Inc.</p>
+                        </div>
+                    </div>
+                    <div class="cert-date">Jan 2023</div>
+                    <p>Validated expertise in containerization, Docker deployment, orchestration, and security best practices.</p>
+                    <p class="cert-id"><strong>Credential ID:</strong> DCA-54321</p>
+                    <div class="cert-footer">
+                        <a href="#" class="btn btn-outline">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:rudraksh@example.com">rudraksh@example.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA, USA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Availability</h3>
+                            <p>Monday - Friday: 9am - 5pm PST</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Rudraksh</div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="copyright">
+                    &copy; 2023 Rudraksh Kanungo. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                }
+                
+                // Update active link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Project filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // In a real application, you would send this data to a server
+            console.log({ name, email, subject, message });
+            
+            // Show success message
+            alert('Thank you for your message! I will get back to you soon.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Sticky navigation background
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(15, 23, 42, 0.98)';
+                nav.style.boxShadow = '0 5px 20px rgba(2, 6, 23, 0.2)';
+            } else {
+                nav.style.background = 'rgba(15, 23, 42, 0.95)';
+                nav.style.boxShadow = 'none';
+            }
+            
+            // Highlight active section in navigation
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

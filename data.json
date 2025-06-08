@@ -1,0 +1,111 @@
+{
+    "personal": {
+        "name": "Rudraksh Kanungo",
+        "title": "Software Engineer",
+        "tagline": "App Development | DevOps | Cloud",
+        "description": "A passionate Software Engineer specializing in app development, DevOps, and cloud architecture. I build innovative solutions with cutting-edge technology.",
+        "email": "rudraksh@example.com",
+        "phone": "+1 (123) 456-7890",
+        "location": "San Francisco, CA, USA",
+        "about_title": "Software Engineer & Developer",
+        "about_description": [
+            "I'm a dedicated software engineer with expertise in building scalable applications and solving complex problems. With a strong foundation in both frontend and backend technologies, I create efficient, user-friendly solutions that drive business growth.",
+            "My approach combines technical excellence with creative problem-solving to deliver exceptional results. I'm constantly learning and adapting to new technologies to stay at the forefront of the industry."
+        ]
+    },
+    "skills": {
+        "categories": [
+            {
+                "title": "App Development",
+                "icon": "fas fa-mobile-alt",
+                "skills": [
+                    {"icon": "fab fa-react", "name": "React Native"},
+                    {"icon": "fab fa-android", "name": "Android (Kotlin)"},
+                    {"icon": "fab fa-apple", "name": "iOS (Swift)"},
+                    {"icon": "fab fa-js", "name": "JavaScript"}
+                ]
+            },
+            {
+                "title": "Backend & DevOps",
+                "icon": "fas fa-server",
+                "skills": [
+                    {"icon": "fab fa-node", "name": "Node.js"},
+                    {"icon": "fab fa-python", "name": "Python"},
+                    {"icon": "fab fa-docker", "name": "Docker"},
+                    {"icon": "fas fa-cubes", "name": "Kubernetes"}
+                ]
+            },
+            {
+                "title": "Cloud & Databases",
+                "icon": "fas fa-cloud",
+                "skills": [
+                    {"icon": "fab fa-aws", "name": "AWS"},
+                    {"icon": "fas fa-database", "name": "MongoDB"},
+                    {"icon": "fas fa-database", "name": "PostgreSQL"},
+                    {"icon": "fas fa-fire", "name": "Firebase"}
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "filters": [
+            {"name": "All Projects", "category": "all"},
+            {"name": "App Development", "category": "app"},
+            {"name": "DevOps", "category": "devops"},
+            {"name": "Cloud", "category": "cloud"}
+        ],
+        "projects": [
+            {
+                "category": "app",
+                "icon": "fas fa-shopping-cart",
+                "title": "E-commerce Platform",
+                "description": "A full-stack e-commerce solution with product management, user authentication, and payment processing.",
+                "tags": ["React Native", "Node.js", "MongoDB"],
+                "links": [
+                    {"icon": "fab fa-github", "text": "GitHub", "url": "#"},
+                    {"icon": "fas fa-external-link-alt", "text": "Live Demo", "url": "#"}
+                ]
+            },
+            {
+                "category": "devops",
+                "icon": "fas fa-infinity",
+                "title": "CI/CD Pipeline Automation",
+                "description": "A comprehensive CI/CD pipeline for automating testing, building, and deployment of applications.",
+                "tags": ["Docker", "Jenkins", "Kubernetes"],
+                "links": [
+                    {"icon": "fab fa-github", "text": "GitHub", "url": "#"},
+                    {"icon": "fas fa-external-link-alt", "text": "Live Demo", "url": "#"}
+                ]
+            },
+            {
+                "category": "cloud",
+                "icon": "fas fa-cloud",
+                "title": "Cloud Infrastructure Automation",
+                "description": "Infrastructure as Code solution for automating cloud resource provisioning and management.",
+                "tags": ["Terraform", "AWS", "Ansible"],
+                "links": [
+                    {"icon": "fab fa-github", "text": "GitHub", "url": "#"},
+                    {"icon": "fas fa-external-link-alt", "text": "Live Demo", "url": "#"}
+                ]
+            },
+            {
+                "category": "app",
+                "icon": "fas fa-mobile-alt",
+                "title": "Fitness Tracker App",
+                "description": "A mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.",
+                "tags": ["React Native", "Firebase", "Redux"],
+                "links": [
+                    {"icon": "fab fa-github", "text": "GitHub", "url": "#"},
+                    {"icon": "fas fa-external-link-alt", "text": "Live Demo", "url": "#"}
+                ]
+            }
+        ]
+    },
+    
+    "social": [
+        {"icon": "fab fa-github", "url": "#"},
+        {"icon": "fab fa-linkedin-in", "url": "#"},
+        {"icon": "fab fa-twitter", "url": "#"},
+        {"icon": "fab fa-medium-m", "url": "#"}
+    ]
+}

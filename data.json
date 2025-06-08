@@ -103,9 +103,9 @@
     },
     
     "social": [
-        {"icon": "fab fa-github", "url": "#"},
-        {"icon": "fab fa-linkedin-in", "url": "#"},
-        {"icon": "fab fa-twitter", "url": "#"},
-        {"icon": "fab fa-medium-m", "url": "#"}
+        {"icon": "fab fa-github", "url": "https://github.com/Rudraksh121a"},
+        {"icon": "fab fa-linkedin-in", "url": "https://www.linkedin.com/in/rudraksh-kanungo/"},
+        {"icon": "fab fa-twitter", "url": "https://x.com/Rudraks42272163"},
+        {"icon": "fab fa-medium-m", "url": "https://medium.com/@rudrakshkanungo2022"}
     ]
 }

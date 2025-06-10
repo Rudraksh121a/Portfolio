@@ -648,100 +648,95 @@ nav {
   color: var(--primary-light);
 }
 
+
+
 /* Contact Section */
 #contact {
-  position: relative;
+    position: relative;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    margin: 0 auto;
+    border-radius: 2px;
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
+    display: flex;
+    justify-content: center; /* Center the contact-info horizontally */
+    align-items: center; /* Center vertically if needed */
+    min-height: 200px; /* Ensure some height for centering */
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px; /* Limit width for better centering */
+    width: 100%;
+    text-align: center; /* Center text within contact-info */
 }
 
 .contact-item {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Align icon and details vertically */
+    justify-content: center; /* Center the item horizontally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .contact-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .contact-icon i {
-  font-size: 1.5rem;
-  color: var(--dark);
+    font-size: 1.5rem;
+    color: var(--dark);
 }
 
 .contact-details h3 {
-  margin-bottom: 10px;
-  color: var(--text);
+    margin-bottom: 10px;
+    color: var(--text);
+    font-size: 1.25rem;
 }
-
-.contact-details p,
 .contact-details a {
-  color: var(--text-light);
-  text-decoration: none;
-  transition: var(--transition);
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
 }
 
 .contact-details a:hover {
-  color: var(--primary-light);
+    color: var(--primary-light);
 }
 
-.contact-form {
-  background: var(--card-bg);
-  border-radius: 15px;
-  padding: 40px;
-  box-shadow: 0 20px 40px rgba(2, 6, 23, 0.3);
-  backdrop-filter: blur(10px);
-}
 
-.form-group {
-  margin-bottom: 25px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--text-light);
-}
-
-.form-control {
-  width: 100%;
-  padding: 15px;
-  background: rgba(30, 41, 59, 0.5);
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  border-radius: 8px;
-  color: var(--text);
-  font-family: "Poppins", sans-serif;
-  transition: var(--transition);
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
-}
-
-textarea.form-control {
-  min-height: 150px;
-  resize: vertical;
-}
 
 /* Footer */
 footer {

@@ -1,108 +1,305 @@
 {
-    "personal": {
-        "name": "Rudraksh Kanungo",
-        "title": "Software Engineer",
-        "tagline": "App Development | DevOps | Cloud",
-        "description": "A passionate Software Engineer specializing in app development, DevOps, and cloud architecture. I build innovative solutions with cutting-edge technology.",
-        "email": "rudrakshkanungo2022@gmail.com",
-        "about_title": "Software Engineer & Developer",
-        "about_description": [
-            "I'm a dedicated software engineer with expertise in building scalable applications and solving complex problems. With a strong foundation in both frontend and backend technologies, I create efficient, user-friendly solutions that drive business growth.",
-            "My approach combines technical excellence with creative problem-solving to deliver exceptional results. I'm constantly learning and adapting to new technologies to stay at the forefront of the industry."
-        ]
-    },
-    "skills": {
-        "categories": [
-            {
-                "title": "App Development",
-                "icon": "fas fa-mobile-alt",
-                "skills": [
-                    {"icon": "fab fa-react", "name": "React Native"},
-                    {"icon": "fa-brands fa-flutter", "name": "Flutter"},
-                    {"icon": "fab fa-js", "name": "JavaScript"}
-                ]
-            },
-            {
-                "title": "Backend & DevOps",
-                "icon": "fas fa-server",
-                "skills": [
-                    {"icon": "fab fa-node", "name": "Node.js"},
-                    {"icon": "fab fa-python", "name": "Python"},
-                    {"icon": "fab fa-docker", "name": "Docker"},
-                    {"icon": "fas fa-cubes", "name": "Kubernetes"}
-                ]
-            },
-            {
-                "title": "Cloud & Databases",
-                "icon": "fas fa-cloud",
-                "skills": [
-                    {"icon": "fab fa-aws", "name": "AWS"},
-                    {"icon": "fas fa-database", "name": "MongoDB"},
-                    {"icon": "fas fa-database", "name": "PostgreSQL"},
-                    {"icon": "fas fa-fire", "name": "Firebase"}
-                ]
-            }
-        ]
-    },
-    "projects": {
-        "filters": [
-            {"name": "All Projects", "category": "all"},
-            {"name": "App Development", "category": "app"},
-            {"name": "DevOps", "category": "devops"},
-            {"name": "Cloud", "category": "cloud"}
-        ],
-        "projects": [
-            {
-                "category": "app",
-                "icon": "fas fa-shopping-cart",
-                "title": "E-commerce Platform",
-                "description": "A full-stack e-commerce solution with product management, user authentication, and payment processing.",
-                "tags": ["React Native", "Node.js", "MongoDB"],
-                "links": [
-                    {"icon": "fab fa-github", "text": "GitHub", "url": "#"},
-                    {"icon": "fas fa-external-link-alt", "text": "Live Demo", "url": "#"}
-                ]
-            },
-            {
-                "category": "devops",
-                "icon": "fas fa-infinity",
-                "title": "CI/CD Pipeline Automation",
-                "description": "A comprehensive CI/CD pipeline for automating testing, building, and deployment of applications.",
-                "tags": ["Docker", "Jenkins", "Kubernetes"],
-                "links": [
-                    {"icon": "fab fa-github", "text": "GitHub", "url": "#"},
-                    {"icon": "fas fa-external-link-alt", "text": "Live Demo", "url": "#"}
-                ]
-            },
-            {
-                "category": "cloud",
-                "icon": "fas fa-cloud",
-                "title": "Cloud Infrastructure Automation",
-                "description": "Infrastructure as Code solution for automating cloud resource provisioning and management.",
-                "tags": ["Terraform", "AWS", "Ansible"],
-                "links": [
-                    {"icon": "fab fa-github", "text": "GitHub", "url": "#"},
-                    {"icon": "fas fa-external-link-alt", "text": "Live Demo", "url": "#"}
-                ]
-            },
-            {
-                "category": "app",
-                "icon": "fas fa-mobile-alt",
-                "title": "Fitness Tracker App",
-                "description": "A mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.",
-                "tags": ["React Native", "Firebase", "Redux"],
-                "links": [
-                    {"icon": "fab fa-github", "text": "GitHub", "url": "#"},
-                    {"icon": "fas fa-external-link-alt", "text": "Live Demo", "url": "#"}
-                ]
-            }
-        ]
-    },
-    
-    "social": [
-        {"icon": "fab fa-github", "url": "https://github.com/Rudraksh121a"},
-        {"icon": "fab fa-linkedin-in", "url": "https://www.linkedin.com/in/rudraksh-kanungo/"},
-        {"icon": "fab fa-twitter", "url": "https://x.com/Rudraks42272163"},
-        {"icon": "fab fa-medium-m", "url": "https://medium.com/@rudrakshkanungo2022"}
+  "personal": {
+    "Firstname": "Rudraksh",
+    "lastname": "Kanungo",
+    "title": "Software Engineer",
+    "tagline": "App Development | DevOps | Cloud",
+    "description": "A passionate Software Engineer specializing in app development, DevOps, and cloud architecture. I build innovative solutions with cutting-edge technology.",
+    "email": "rudrakshkanungo2022@gmail.com",
+    "about_title": "Software Engineer & Developer",
+    "about_description": [
+      "I'm a dedicated software engineer with expertise in building scalable applications and solving complex problems. With a strong foundation in both frontend and backend technologies, I create efficient, user-friendly solutions that drive business growth.",
+      "My approach combines technical excellence with creative problem-solving to deliver exceptional results. I'm constantly learning and adapting to new technologies to stay at the forefront of the industry."
     ]
+  },
+  "skills": {
+    "categories": [
+      {
+        "title": "App Development",
+        "icon": "fas fa-mobile-alt",
+        "skills": [
+          {
+            "icon": "fab fa-react",
+            "name": "React Native"
+          },
+          {
+            "icon": "fas fa-mobile",
+            "name": "Flutter"
+          },
+          {
+            "icon": "fab fa-js",
+            "name": "JavaScript"
+          },
+          {
+            "icon": "fab fa-python",
+            "name": "Flet (Python)"
+          },
+          {
+            "icon": "fab fa-python",
+            "name": "Kivy (Python)"
+          },
+          {
+            "icon": "fab fa-python",
+            "name": "KivyMD"
+          }
+        ]
+      },
+      {
+        "title": "Web Development",
+        "icon": "fas fa-globe",
+        "skills": [
+          {
+            "icon": "fab fa-react",
+            "name": "React.js"
+          },
+          {
+            "icon": "fas fa-code",
+            "name": "Next.js"
+          },
+          {
+            "icon": "fab fa-js",
+            "name": "JavaScript"
+          },
+          {
+            "icon": "fab fa-html5",
+            "name": "HTML"
+          },
+          {
+            "icon": "fab fa-css3-alt",
+            "name": "CSS"
+          },
+            {
+            "icon": "fab fa-tailwind",
+            "name": "Tailwind CSS"
+            },
+          
+          {
+            "icon": "fab fa-bootstrap",
+            "name": "Bootstrap"
+          }
+        ]
+      },
+      {
+        "title": "Backend & APIs",
+        "icon": "fas fa-server",
+        "skills": [
+          {
+            "icon": "fab fa-python",
+            "name": "Python"
+          },
+          {
+            "icon": "fas fa-fire",
+            "name": "Flask"
+          },
+          {
+            "icon": "fas fa-database",
+            "name": "Django"
+          },
+          {
+            "icon": "fas fa-cloud",
+            "name": "Supabase"
+          },
+          {
+            "icon": "fas fa-plug",
+            "name": "REST API"
+          }
+        ]
+      },
+      {
+        "title": "Automation & Scripting",
+        "icon": "fas fa-robot",
+        "skills": [
+          {
+            "icon": "fab fa-python",
+            "name": "Selenium"
+          },
+          {
+            "icon": "fab fa-python",
+            "name": "Playwright"
+          },
+          {
+            "icon": "fab fa-python",
+            "name": "Tkinter"
+          },
+          {
+            "icon": "fas fa-desktop",
+            "name": "PyAutoGUI"
+          }
+        ]
+      },
+      {
+        "title": "AI & Machine Learning",
+        "icon": "fas fa-brain",
+        "skills": [
+          {
+            "icon": "fab fa-python",
+            "name": "Python"
+          },
+          {
+            "icon": "fas fa-chart-line",
+            "name": "NumPy"
+          },
+          {
+            "icon": "fas fa-chart-bar",
+            "name": "Pandas"
+          },
+          {
+            "icon": "fas fa-project-diagram",
+            "name": "scikit-learn"
+          }
+        ]
+      },
+      {
+        "title": "Tools & Platforms",
+        "icon": "fas fa-tools",
+        "skills": [
+          {
+            "icon": "fas fa-cloud",
+            "name": "Render"
+          },
+          {
+            "icon": "fab fa-git-alt",
+            "name": "Git"
+          },
+          {
+            "icon": "fab fa-github",
+            "name": "GitHub"
+          },
+          {
+            "icon": "fas fa-terminal",
+            "name": "Linux"
+          },
+          {
+            "icon": "fas fa-chart-pie",
+            "name": "Streamlit"
+          },
+          {
+            "icon": "fas fa-server",
+            "name": "Firebase"
+          },
+          {
+            "icon": "fab fa-aws",
+            "name": "AWS (Basic)"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "filters": [
+      {
+        "name": "All Projects",
+        "category": "all"
+      },
+      {
+        "name": "App Development",
+        "category": "app"
+      }
+
+
+    ],
+    "projects": [
+      {
+        "category": "app",
+        "icon": "fas fa-shopping-cart",
+        "title": "Storix",
+        "description": "Storix is a simple app that turns your items into ready-to-send invoices in a flash. Just tell it what you're selling, and it handles the rest.",
+        "tags": ["React Native", "Expo"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/Storix"
+          },
+          {
+            "icon": "fas fa-external-link-alt",
+            "text": "Live Demo",
+            "url": "https://drive.google.com/file/d/1MFdFdvl98bEaLHF5pe3jHhWWNAk3l6ul/view?usp=sharing"
+          }
+        ]
+      },
+
+      {
+        "category": "app",
+        "icon": "fas fa-mobile-alt",
+        "title": "Expense-Tracker",
+        "description": "A mobile app to track daily expenses, categorize spending.",
+        "tags": ["React Native", "Expo"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/Expense-Tracker"
+          },
+          {
+            "icon": "fas fa-external-link-alt",
+            "text": "Live Demo",
+            "url": "https://drive.google.com/file/d/1cbnImIhK6oHq3-AMUhOlltH06YNecyJa/view?usp=sharing"
+          }
+        ]
+      },
+
+      {
+        "category": "app",
+        "icon": "fas fa-mobile-alt",
+        "title": "BMI-Calculator",
+        "description": "A simple BMI calculator app that helps users calculate their Body Mass Index based on height and weight inputs.",
+        "tags": ["Flutter", "Dart"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/Flutter-BMI"
+          },
+          {
+            "icon": "fas fa-external-link-alt",
+            "text": "Live Demo",
+            "url": "https://github.com/Rudraksh121a/Flutter-BMI/blob/main/app-release.apk"
+          }
+        ]
+      }
+     
+    ]
+  },
+  "certifications": [
+    {
+      "icon": "fas fa-code",
+      "title": "Become a Django Developer",
+      "issuer": "LinkedIn Learning",
+      "date": "2025",
+      "description": "Comprehensive learning path to master Django for building robust, scalable web applications.",
+      "credential_id": "",
+      "url": "https://www.linkedin.com/learning/certificates/c09189fa5d8c4b3b45fef68d74880cbb6a13c5f023c5a461d0085aa1c88f29a7"
+    },
+    {
+      "icon": "fas fa-code",
+      "title": "Django Essential Training",
+      "issuer": "LinkedIn Learning",
+      "date": "2025",
+      "description": "Learned core concepts of Django including models, views, templates, and admin customization.",
+      "credential_id": "",
+      "url": "https://www.linkedin.com/learning/certificates/c522e378dc3545d092bbbbad10d419a613d4aa8a839649639056f7ecbbfa08b8"
+    },
+    {
+      "icon": "fas fa-code",
+      "title": "Django Forms Certificate",
+      "issuer": "LinkedIn Learning",
+      "date": "2025",
+      "description": "Gained in-depth knowledge of Django forms, validation, and user input processing.",
+      "credential_id": "2dcc52e7d0358ea931a15f6a294113582402ab72a09416974defaa4c5b5f834b",
+      "url": ""
+    }
+  ],
+  "social": [
+    { "icon": "fab fa-github", "url": "https://github.com/Rudraksh121a" },
+    {
+      "icon": "fab fa-linkedin-in",
+      "url": "https://www.linkedin.com/in/rudraksh-kanungo/"
+    },
+    { "icon": "fab fa-twitter", "url": "https://x.com/Rudraks42272163" },
+    {
+      "icon": "fab fa-medium-m",
+      "url": "https://medium.com/@rudrakshkanungo2022"
+    }
+  ]
 }

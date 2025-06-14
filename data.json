@@ -68,11 +68,10 @@
             "icon": "fab fa-css3-alt",
             "name": "CSS"
           },
-            {
+          {
             "icon": "fab fa-tailwind",
             "name": "Tailwind CSS"
-            },
-          
+          },
           {
             "icon": "fab fa-bootstrap",
             "name": "Bootstrap"
@@ -194,9 +193,15 @@
       {
         "name": "App Development",
         "category": "app"
+      },
+      {
+        "name": "AI & Machine Learning",
+        "category": "ai"
+      },
+      {
+        "name": "Automation & Scripting",
+        "category": "automation"
       }
-
-
     ],
     "projects": [
       {
@@ -218,7 +223,6 @@
           }
         ]
       },
-
       {
         "category": "app",
         "icon": "fas fa-mobile-alt",
@@ -238,7 +242,6 @@
           }
         ]
       },
-
       {
         "category": "app",
         "icon": "fas fa-mobile-alt",
@@ -257,8 +260,161 @@
             "url": "https://github.com/Rudraksh121a/Flutter-BMI/blob/main/app-release.apk"
           }
         ]
+      },
+      {
+        "category": "ai",
+        "icon": "fas fa-car",
+        "title": "Car Price Predictor",
+        "description": "A machine learning web app that predicts car prices based on input features, built with a Flask backend and scikit-learn for model training.",
+        "tags": ["Python", "Flask", "scikit-learn", "Machine Learning"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/tree/main/Car%20price%20predictor"
+          }
+        ]
+      },
+      {
+        "category": "ai",
+        "icon": "fas fa-heartbeat",
+        "title": "Diabetes Predictor",
+        "description": "A web-based machine learning application to predict diabetes risk using user inputs, powered by Flask and scikit-learn.",
+        "tags": ["Python", "Flask", "scikit-learn", "Machine Learning"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/tree/main/Diabetes"
+          }
+        ]
+      },
+      {
+        "category": "ai",
+        "icon": "fas fa-cricket",
+        "title": "IPL Score Predictor",
+        "description": "A machine learning app that predicts IPL match scores based on historical data, developed with Flask and scikit-learn.",
+        "tags": ["Python", "Flask", "scikit-learn", "Machine Learning"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/tree/main/IPL%20score%20Prediction"
+          }
+        ]
+      },
+      {
+        "category": "automation",
+        "icon": "fas fa-bell",
+        "title": "Water Reminder Notification",
+        "description": "A Python script that sends periodic notifications to remind users to drink water, enhancing daily hydration habits.",
+        "tags": ["Python", "Scripting"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/blob/main/Notification%20system"
+          }
+        ]
+      },
+      {
+        "category": "automation",
+        "icon": "fas fa-key",
+        "title": "Password Generator",
+        "description": "A Python script that generates secure passwords based on user inputs for minimum length, numbers, and special characters.",
+        "tags": ["Python", "Scripting"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/tree/main/Password%20Generator"
+          }
+        ]
+      },
+      {
+          "category": "automation",
+          "icon": "fas fa-video",
+          "title": "Screen Recorder",
+          "description": "A Python-based screen recording tool using OpenCV and NumPy to capture and save desktop activity.",
+          "tags": ["Python", "OpenCV", "NumPy"],
+          "links": [
+              {
+                "icon": "fab fa-github",
+                "text": "GitHub",
+                "url": "https://github.com/Rudraksh121a/project/tree/main.sh%20recorder"
+              }
+            ]
+        },
+      {
+        "category": "app",
+        "icon": "fas fa-gamepad",
+        "title": "Snake Game",
+        "description": "A classic Snake game implemented in Python using Pygame, featuring smooth controls and retro gameplay.",
+        "tags": ["Python", "Pygame"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/tree/main/Snake%20Game"
+          }
+        ]
+      },
+      {
+        "category": "app",
+        "icon": "fas fa-image",
+        "title": "Steganography Tool",
+        "description": "A Python application for hiding and extracting messages within images using Tkinter and the Stegano library.",
+        "tags": ["Python", "Tkinter", "Stegano"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/tree/main/Steganography"
+          }
+        ]
+      },
+      {
+        "category": "app",
+        "icon": "fas fa-volume-up",
+        "title": "Text-to-Speech Converter",
+        "description": "A Python app that converts text to speech using Tkinter for the interface and pyttsx3 for audio generation.",
+        "tags": ["Python", "Tkinter", "pyttsx3"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/blob/main/Text%20TO%20Speech"
+          }
+        ]
+      },
+      {
+        "category": "app",
+        "icon": "fas fa-user-lock",
+        "title": "Login and Signup System",
+        "description": "A Python-based login and signup interface built with Tkinter, providing secure user authentication.",
+        "tags": ["Python", "Tkinter"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/tree/main/login%20and%20signup"
+          }
+        ]
+      },
+      {
+        "category": "app",
+        "icon": "fas fa-cloud-sun",
+        "title": "Weather App",
+        "description": "A Python application that fetches and displays weather information using Tkinter for a user-friendly interface.",
+        "tags": ["Python", "Tkinter"],
+        "links": [
+          {
+            "icon": "fab fa-github",
+            "text": "GitHub",
+            "url": "https://github.com/Rudraksh121a/project/blob/main/weather%20app"
+          }
+        ]
       }
-     
     ]
   },
   "certifications": [

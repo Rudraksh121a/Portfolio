@@ -7,6 +7,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Add this new CSS for hidden projects */
+        .hidden-project {
+            display: none !important;
+        }
+        
+        /* Center the Show More button */
+        #show-more-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -113,7 +125,7 @@
             
             <div class="projects-grid">
                 {% for project in data.projects.projects %}
-                    <div class="project-card" data-category="{{ project.category }}">
+                    <div class="project-card {% if loop.index > 4 %}hidden-project{% endif %}" data-category="{{ project.category }}">
                         <div class="project-img">
                             <i class="{{ project.icon }}"></i>
                         </div>
@@ -135,6 +147,11 @@
                         </div>
                     </div>
                 {% endfor %}
+            </div>
+            
+            <!-- Show More Button Container -->
+            <div id="show-more-container" class="text-center" {% if data.projects.projects|length <= 4 %}style="display:none;"{% endif %}>
+                <button id="show-more-btn" class="btn btn-primary">Show More</button>
             </div>
         </div>
     </section>
@@ -227,7 +244,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div classउ class="logo">{{ data.personal.Firstname }}</div>
+                <div class="logo">{{ data.personal.Firstname }}</div>
                 
                 <div class="social-links">
                     {% for social in data.social %}
@@ -289,9 +306,25 @@
                 });
             });
             
-            // Project filtering
+            // Project filtering and Show More functionality
             const filterBtns = document.querySelectorAll('.filter-btn');
             const projectCards = document.querySelectorAll('.project-card');
+            const showMoreBtn = document.getElementById('show-more-btn');
+            const showMoreContainer = document.getElementById('show-more-container');
+            let visibleCount = 4; // Initial number of visible projects
+            
+            // Show More functionality
+            if (showMoreBtn) {
+                showMoreBtn.addEventListener('click', () => {
+                    // Show all hidden projects
+                    document.querySelectorAll('.hidden-project').forEach(card => {
+                        card.classList.remove('hidden-project');
+                    });
+                    
+                    // Hide the Show More button
+                    showMoreContainer.style.display = 'none';
+                });
+            }
             
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -303,13 +336,32 @@
                     
                     const filter = btn.getAttribute('data-filter');
                     
+                    // First, hide all projects
+                    projectCards.forEach(card => {
+                        card.style.display = 'none';
+                        card.classList.add('hidden-project');
+                    });
+                    
+                    // Then show matching projects (first 4 initially)
+                    let count = 0;
                     projectCards.forEach(card => {
                         if (filter === 'all' || card.getAttribute('data-category') === filter) {
                             card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
+                            
+                            // Only show first 4 projects initially
+                            if (count < 4) {
+                                card.classList.remove('hidden-project');
+                            }
+                            count++;
                         }
                     });
+                    
+                    // Show or hide Show More button based on count
+                    if (count > 4) {
+                        showMoreContainer.style.display = 'block';
+                    } else {
+                        showMoreContainer.style.display = 'none';
+                    }
                 });
             });
             
